@@ -1,0 +1,62 @@
+:root {
+  --primary-purple-color: #6420aa;
+  --primary-pink-color: #ff3ea5;
+  --dark-shadow: #92476f88;
+  --light-shdow: #a49aae81;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(
+    90deg,
+    var(--primary-purple-color),
+    var(--primary-pink-color)
+  );
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 38vw;
+  height: 40vh;
+  background: linear-gradient(
+    60deg,
+    var(--primary-purple-color),
+    var(--primary-pink-color),
+    #ffffffb7
+  );
+  opacity: 0.5;
+  border-radius: 10px;
+  backdrop-filter: blur(500px);
+  border: 0.2px solid #ffffffa7;
+  box-shadow: 10px 10px 50px 20px var(--light-shdow),
+    -10px -10px 50px 20px var(--dark-shadow);
+}
+
+.visa {
+  width: 5vw;
+  height: auto;
+  align-self: flex-end;
+  margin-top: 2vw;
+  margin-right: 3vw;
+}
+
+.qr {
+  width: 5vw;
+  height: 3vw;
+  margin-top: 6vw;
+  margin-left: 2vw;
+  align-self: flex-start;
+}
+
+.card-number {
+  color: #ffffffb9;
+  font-size: 28px;
+}
